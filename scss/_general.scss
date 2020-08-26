@@ -1,0 +1,47 @@
+$primary-color: hsl(257, 40%, 49%);
+$bg-desktop: url("/dist/images/bg-desktop.svg");
+$bg-mobile: url("/dist/images/bg-mobile.svg");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin media-sm{
+    @media screen and (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin media-sm-x{
+    @media  screen and (min-width:376px) {
+        @content;
+    }
+}
+
+
+
+@mixin media-md {
+    @media screen and (min-width: 430px) {
+        @content;
+    }
+}
+
+@mixin media-md-x {
+    @media screen and (min-width: 680px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-lg-x {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}

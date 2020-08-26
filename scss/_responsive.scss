@@ -1,0 +1,122 @@
+@include media-sm{
+    .box__top{
+        background-image: $bg-mobile;
+        
+    }
+}
+
+@include media-sm-x{
+    .box__top{
+        background-image: $bg-mobile;
+        font-size: 1.1rem;
+    }
+}
+
+@include media-md-x{
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        background-image: $bg-desktop;
+        background-size: cover;
+        background-position: center;
+        .box__top{
+            background-image: unset;
+            height: 100%;
+            width: 100%;
+            img:nth-child(2){
+                height: 100%;
+                 width: 100%;
+            }
+        }
+
+        .box__bottom{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2% 5%;
+            text-align: left;
+            color: #fff;
+            
+            
+            h1{
+                font-size: 2rem;
+                font-weight: 400;
+                width: 60%;  
+                line-height: 2.5rem;
+            }
+    
+            p{
+                font-size: 1.1rem;
+                font-weight: 400;
+                width: 60%;
+            }
+    
+            button{
+                border: none;
+                height: 10%;
+                width: 30%;
+                border-radius: 50px;
+                margin-top: 10%;
+                box-shadow: 2px 3px 7px 2px hsla(0, 0, 0, 0.2);
+                color: $primary-color;
+                left: -15%;
+                position: relative;
+            }
+    
+        }
+
+      .social-icons{
+          grid-column: 2;
+          height: 30%;
+          display: flex;
+          padding: 2% 5%;
+          margin-top: 10%;
+          display: flex;
+          justify-content: flex-end;
+  
+          a{
+              color: #fff;
+              margin: 2%;
+              border: 1px solid #fff;
+              height: 7.5px;
+              width: 7.5px;
+              padding: 15px;
+              border-radius: 50%;
+              line-height: 2rem;
+              position: relative;
+  
+              i {
+                  position: absolute;
+                   bottom: 7.5px;
+                   left: 7.5px;
+              }
+  
+              i:nth-child(1){
+                  left: 9px;
+              }
+          }
+      }
+    }
+    
+}
+
+@include media-md{
+
+    .top__bottom{
+        height: 100%;
+    }
+
+    .box__bottom{
+            height: 100%;
+
+            p{
+                font-size: 0.9rem;
+            }
+    }
+
+    
+}

@@ -1,0 +1,110 @@
+@import 'general';
+
+body{
+    background: $primary-color;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .box__top{
+        height: 45%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 2% 5%;
+        position: relative;
+
+        img:nth-child(1){
+            width: 40%;
+            height: 30%;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        img:nth-child(2){
+        width: 85%;
+        height: 70%;
+        margin: 0 auto;
+        }
+    }
+
+
+
+    .box__bottom{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 5%;
+        text-align: center;
+        color: #fff;
+        
+        h1{
+            font-size: 1.3rem;
+            font-weight: 700;
+            width: 85%;  
+            line-height: 2.2rem;
+        }
+
+        p{
+            font-weight: 400;
+            width: 85%;
+        }
+
+        button{
+            border: none;
+            height: 12%;
+            width: 60%;
+            border-radius: 50px;
+            margin-top: 10%;
+            box-shadow: 2px 3px 7px 2px hsla(0, 0, 0, 0.2);
+            color: $primary-color;
+        }
+
+    }
+
+    .social-icons{
+        width: 100%;
+        display: flex;
+        padding: 2% 5%;
+        justify-content: center;
+        align-items: center;
+         margin-top: 10%;
+
+        a{
+            color: #fff;
+            margin: 2%;
+            border: 1px solid #fff;
+            height: 7.5px;
+            width: 7.5px;
+            padding: 15px;
+            border-radius: 50%;
+            line-height: 2rem;
+            position: relative;
+
+            i {
+                position: absolute;
+                 bottom: 7.5px;
+                 left: 7.5px;
+            }
+
+            i:nth-child(1){
+                left: 9px;
+            }
+        }
+
+
+        }
+
+}
+@import 'responsive';
